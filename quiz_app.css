@@ -1,9 +1,20 @@
 body {
-  background-color: #EEEEEE;
+  background-color: #eeffff;
 }
 
 .title {
   text-align: center;
+  border-bottom: solid 3px #67c5ff;
+  position: relative;
+}
+
+.title:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #5472cd;
+  bottom: -3px;
+  width: 20%;
 }
 
 #question {
@@ -27,26 +38,32 @@ button {
 }
 
 #restart-button {
-  border: 1px solid #000000;
+  border: solid 2px #67c5ff;
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 5px 10px;
+  padding: 10px 80px;
+  transition: .4s;
+  font-size: 20px;
 }
 
 .select-button {
-  border: 1px solid #000000;
+  border: solid 2px #67c5ff;
   border-radius: 5px;
   background-color: #ffffff;
   width: 600px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 10px auto;
+  transition: .4s;
+  font-size: 18px;
 }
 
 #restart-button:hover {
-  background-color: #b8dceb;
+  background: #67c5ff;
+  color: white;
 }
 
 .select-button:hover {
-  background-color: #b8dceb;
+  background: #67c5ff;
+  color: white;
 }
